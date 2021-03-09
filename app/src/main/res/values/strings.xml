@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Math Analytics</string>
+    <string name="explore">Explore</string>
+    <string name="courses">My Courses</string>
+    <string name="profile">Profile</string>
+
+    <string name="button_add_course">Add new Course</string>
+    <string name="edittext_search">   What do you want to learn ?</string>
+    <string name="courses_emptytext"> You haven\'t enrolled in any courses (yet)</string>
+
+    <string name="free_checkbox">Free</string>
+    <string name="paid_checkbox">Paid</string>
+    <string name="lec_box">Lecture</string>
+    <string name="course_box">Course</string>
+    <string name="en_box">English</string>
+    <string name="ru_box">Russian</string>
+    <string name="course_name">Course name</string>
+    <string name="duration">Duration</string>
+    <string name="language">Language</string>
+    <string name="level">Level</string>
+    <string name="cost">Cost</string>
+    <string name="more">More</string>
+    <string name="hint_search_en">What do you want to learn ?</string>
+    <string name="about_the_course_en">About the Course</string>
+    <string name="features">Features</string>
+    <string name="free_rus">бесплатные</string>
+    <string name="lan_en_ru">На английском</string>
+    <string name="course_ru">Курсы</string>
+    <string name="lan_ru">на русском</string>
+    <string name="paid_ru">платные</string>
+    <string name="lec_ru">лекции</string>
+    <string name="expand_en">Show all</string>
+    <string name="shrink_en">Show less</string>
+    <string name="expand_ru">Подробнее</string>
+    <string name="shrink_ru">Скрыть</string>
+    <string name="about_ru">Об этом курсе</string>
+    <string name="add_to_favorites">Добавить в избранное</string>
+
+
+
+    <string-array name="rangleslider">
+        <item>0</item>
+        <item>9999</item>
+    </string-array>
+
+
+</resources>

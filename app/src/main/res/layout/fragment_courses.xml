@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.courses.CoursesFragment"
+    android:padding="16dp"
+    android:layout_gravity="center">
+
+
+    <ImageView
+        android:id="@+id/image_course"
+        android:layout_width="123dp"
+        android:layout_height="94dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/book2" />
+
+    <TextView
+        android:layout_below="@+id/image_course"
+
+        android:id="@+id/text_courses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Вы еще не добавили ни одного курса"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+
+    <Button
+        android:id="@+id/button_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/purple_500"
+        android:text="Добавить курс"
+        android:textStyle="bold"
+        android:layout_below="@id/text_courses"
+        android:layout_centerInParent="true"/>
+     />
+
+
+</RelativeLayout>

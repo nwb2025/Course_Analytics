@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.explore.ExploreFragment">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/l_search"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/rounded_corners_edittext"
+        >
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/sv"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:iconifiedByDefault="false"
+            app:queryBackground="@android:color/transparent"
+            app:queryHint="Введите название курса"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/buttons_l"
+        android:layout_below="@+id/l_search"
+        android:layout_marginBottom="7dp"
+        >
+
+        <HorizontalScrollView
+            android:id="@+id/scrollviewboxes"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scrollbars="none">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical">
+                <Button
+                    android:id="@+id/checkbox_free"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/free_rus"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="10dp"
+                    android:textSize="12sp"
+                    android:backgroundTint="@color/selector_for_buttons"
+                    />
+
+                <Button
+                    android:id="@+id/checkbox_en"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lan_en_ru"
+                    android:layout_marginRight="10dp"
+                    android:backgroundTint="@color/selector_for_buttons"
+                    android:textSize="12sp"
+                    />
+
+                <Button
+                    android:id="@+id/checkbox_bg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Для начинающих"
+                    android:layout_marginRight="10dp"
+                    android:backgroundTint="@color/selector_for_buttons"
+                    android:textSize="12sp"
+                    />
+                <Button
+                    android:id="@+id/checkbox_course"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/course_ru"
+                    android:layout_marginRight="10dp"
+                    android:backgroundTint="@color/selector_for_buttons"
+                    android:textSize="12sp"
+                    />
+
+                <Button
+                    android:id="@+id/checkbox_ru"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:backgroundTint="@color/selector_for_buttons"
+                    android:text="@string/lan_ru"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/checkbox_paid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/paid_ru"
+                    android:layout_marginRight="10dp"
+                    android:backgroundTint="@color/selector_for_buttons"
+                    android:textSize="12sp"
+                    />
+                <Button
+                    android:id="@+id/button_lec"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lec_ru"
+                    android:textSize="12sp"
+                    android:layout_marginRight="16dp"
+                    android:backgroundTint="@color/selector_for_buttons"/>
+
+
+
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+
+
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/buttons_l"
+        android:id="@+id/recylerview_courses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+</RelativeLayout>
